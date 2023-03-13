@@ -1,1 +1,2 @@
-# postgres-fts-is-better-than
+# Postgres FTS is better than ...
+
