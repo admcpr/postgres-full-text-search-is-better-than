@@ -34,16 +34,16 @@ where to_tsvector(title) @@ plainto_tsquery('star wars')
 order by rank desc -- :) OK that's cool
 
 -- I want to search like google though
-select title, ts_rank(to_tsvector(title), websearch_to_tsquery('"star wars" -lego')) as rank
+select title, ts_rank(to_tsvector(title), websearch_to_tsquery('"star wars" -clone')) as rank
 from movies
-where to_tsvector(title) @@ websearch_to_tsquery('"star wars" -lego')
-order by rank desc -- :) No more lego
+where to_tsvector(title) @@ websearch_to_tsquery('"star wars" -clone')
+order by rank desc -- :) No more clone wars
 
 -- What if you love lego ...
-select title, ts_rank(to_tsvector(title), websearch_to_tsquery('"star wars" +lego')) as rank
+select title, ts_rank(to_tsvector(title), websearch_to_tsquery('"star wars" +clone')) as rank
 from movies
-where to_tsvector(title) @@ websearch_to_tsquery('"star wars" +lego')
-order by rank desc -- :) Only lego
+where to_tsvector(title) @@ websearch_to_tsquery('"star wars" +clone')
+order by rank desc -- :) Only clone wars
 
 -- What if I need to query multiple columns? 
 select to_tsvector(title), to_tsvector("AKATitle")
