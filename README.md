@@ -6,14 +6,30 @@ This repo is a companion to the blog post [Postgres Full Text Search is better t
 ```
 docker compose up
 ```
+
+Open pgAdmin by navigating to http://localhost:5050 and login with:
+
+email: `admin@admin.com`
+
+password: `root`
+
+From pgAdmin connect to PostgreSQL with: 
+
+Host name/Address: `<your ip>`
+
+Username: `root`
+
+Password: `root`
+
 See the [docker-compose.yml](docker-compose.yml) file for more details on passwords etc. 
 
 ## FAQ
 Q: Why?
+
 A: Why not
 
 ## Database source
-The movies data used in this repo is sourced from [themoviedb.org](https://www.themoviedb.org/) under 
+The movies data used in this repo is sourced from [themoviedb.org](https://www.themoviedb.org/).
 
 
 
