@@ -7,21 +7,11 @@ This repo is a companion to the blog post [Postgres Full Text Search is better t
 docker compose up
 ```
 
-Open pgAdmin by navigating to http://localhost:5050 and login with:
+Open pgAdmin by navigating to http://localhost:5050 and login with email: `admin@admin.com`, password: `root`.
 
-email: `admin@admin.com`
+From pgAdmin connect to PostgreSQL with Host name/Address: `<your ip>`, Username: `root`, Password: `root`.
 
-password: `root`
-
-From pgAdmin connect to PostgreSQL with: 
-
-Host name/Address: `<your ip>`
-
-Username: `root`
-
-Password: `root`
-
-See the [docker-compose.yml](docker-compose.yml) file for more details on passwords etc. 
+See the [docker-compose.yml](docker-compose.yml) file for more details on configuration. 
 
 ## FAQ
 Q: Why?
